@@ -1,0 +1,175 @@
+/* ------- CSS Reset ----------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+s img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --clr-primary: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(217, 12%, 63%);
+  --clr-accent: hsl(25, 97%, 53%);
+  --clr-: hsl(216, 12%, 54%);
+  --clr-background: hsl(216, 12%, 8%);
+  --clr-card: hsl(213, 19%, 18%);
+
+  --font: 15px;
+
+  --fw-rgl: 400;
+  --fw-med: 700;
+
+  --ff: Overpass;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5rem;
+  color: var(--clr-primary);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--clr-background);
+  font-size: var(--font);
+  font-family: var(--ff);
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+.main,
+.thank-you {
+  background-color: var(--clr-card);
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+  max-width: 350px;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main img {
+  background-color: hsl(213, 29%, 23%);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 1rem 0 1rem;
+  color: var(--clr-primary);
+}
+
+h2 {
+  margin: 1rem 0 1rem;
+  color: var(--clr-primary);
+}
+
+p {
+  color: var(--clr-secondary);
+  margin-bottom: 1rem;
+}
+
+.main ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.main ul li button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: hsl(213, 29%, 23%);
+  border: none;
+  color: var(--clr-primary);
+  cursor: pointer;
+  padding-top: 0.2rem;
+  transition: 0.3s;
+}
+
+.main ul li button:hover {
+  background-color: var(--clr-accent);
+}
+
+.main ul li button:focus {
+  background-color: var(--clr-secondary);
+}
+
+.btn-submit {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.8rem 0 0.7rem;
+  cursor: pointer;
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.btn-submit:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-accent);
+}
+
+.thank-you p.gray {
+  background-color: hsl(213, 29%, 23%);
+  display: inline-block;
+  color: var(--clr-accent);
+  padding: 5px 10px;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+}
+
+.hidden {
+display: none;
+}
